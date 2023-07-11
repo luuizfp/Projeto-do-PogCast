@@ -32,11 +32,11 @@ main {
 .redes-sociais ul li {
     margin-left: 25px;
     display: inline-block;
-    float: left;
+    float: left; 
     list-style: none;
 }
 .redes-sociais {
-    width: 25%;
+    width: 26%;
     float: right;
 }
 
@@ -44,17 +44,19 @@ main {
     background-color: #ffffff;
     width: 980px;
     margin: 0 auto;
-    border-bottom: 3px solid #efefef;
+    padding: 16px;
 }
 
 .menu-urls {
-    
+    height: 80px;
+    border-bottom: 3px solid #efefef;
 }
 
 .menu ul li {
     display: inline-block;
     color: #8b8b8b;
     margin-left: 15px;
+    height: 50px;
 
 }
 
@@ -66,18 +68,66 @@ main {
 
 }
 
+.menu ul li:hover {
+    border-bottom: 2px solid #00bac6;
+}
+.menu ul li a:hover {
+    color: #00bac6;
+}
+
 .menu {
     width: 70%;
     float: left;
 }
 
 .busca {
+    text-align: center;
     width: 30%;
-    float: right ;
+    float: right;
+
 }
 
-.coluna-100 {
+.busca input {
+    background-image: url(../img/icone-search.png);
+    background-repeat: no-repeat;
+    height: 13px;
+    padding: 12px;
+    width: 150px;
+    margin-top: 5px;
+    background-position: 96%;
+    border: 1px solid #d6d6d6;
+    
+}
+.col-100 {
     width: 100%;
     float: left;
     position: relative;
 }
+button.slick-prev {
+    font-size: 0px;
+    border: none;
+    width: 25px;
+    height: 51px;
+    z-index: 9;
+    background-color: transparent;
+    position: absolute;
+    background-image: url(../img/anterior.png);
+    top: 35%;
+    left: 14%;
+}
+
+button.slick-next {
+    font-size: 0px;
+    border: none;
+    width: 25px;
+    height: 51px;
+    z-index: 9;
+    background-color: transparent;
+    position: absolute;
+    background-image: url(../img/next.png);
+    top: 35%;
+    right: 14%;
+}
+
+
+ 
